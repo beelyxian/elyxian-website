@@ -47,19 +47,15 @@
 
 // src/App.js
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './compo/Navbar';
-import Home from './pages/home';
-import Footer from './compo/Footer';
+// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+// import Navbar from './compo/Navbar';
+// import Home from './pages/home';
+// import Footer from './compo/Footer';
 function App() {
   return (
-    <Router>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-      </Routes>
-      <Footer />
-    </Router>
+    <div>
+      <h1>Hello Elyxian</h1>
+    </div>
   );
 }
 
