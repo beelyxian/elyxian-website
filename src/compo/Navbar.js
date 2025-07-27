@@ -3,7 +3,7 @@ import React,{ useState } from 'react';
 import { Link } from 'react-router-dom';
 import './../styles/Navbar.css'
 function Navbar() {
-  const [isOpen, setIsOpen] = useState('')
+  // const [isOpen, setIsOpen] = useState('')
   return (
     <nav className="navbar">
       <div className="nav-left" />
@@ -13,17 +13,17 @@ function Navbar() {
       </div>
 
       <div className="nav-right">
-        <div className="hamburger" onClick={() => setIsOpen(!isOpen)}>
+        <div className="hamburger">
           <span className="bar" />
           <span className="bar" />
           <span className="bar" />
         </div>
-        <div className={`menu-dropdown-wrapper ${isOpen ? 'show' : ''}`}>
+        <div className={`menu-dropdown-wrapper ${'' ? 'show' : ''}`}>
         <div className="menu-dropdown">
-          <Link to="/" onClick={() => setIsOpen(false)}>Home</Link>
-          <Link to="/products" onClick={() => setIsOpen(false)}>Products</Link>
-          <Link to="/about" onClick={() => setIsOpen(false)}>About</Link>
-          <Link to="/contact" onClick={() => setIsOpen(false)}>Contact</Link>
+          <Link to="/" >Home</Link>
+          <Link to="/products" >Products</Link>
+          <Link to="/about" >About</Link>
+          <Link to="/contact" >Contact</Link>
         </div>
       </div>
       </div>
