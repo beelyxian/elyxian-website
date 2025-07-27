@@ -1,0 +1,53 @@
+.site-footer {
+    background-color: #f4f7f6;
+    padding: 40px 20px 20px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    color: #2d4739;
+    margin-top: 60px;
+  }
+  
+  .footer-content h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .footer-content p {
+    margin: 4px 0;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .footer-contact p {
+    margin: 2px 0;
+  }
+  
+  .connect-label {
+    margin-top: 16px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .footer-socials {
+    margin-top: 8px;
+  }
+  
+  .footer-socials img {
+    width: 28px;
+    height: 28px;
+    margin: 0 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .footer-socials img:hover {
+    transform: scale(1.1);
+  }
+  
+  .footer-copy {
+    margin-top: 20px;
+    font-size: 13px;
+    color: #999;
+  }
+  

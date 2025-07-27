@@ -1,0 +1,89 @@
+/* src/App.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom right, #f5fff4, #dff5d7);
+  color: #2e7d32;
+  text-align: center;
+  justify-content: center;
+  height: 100vh;
+}
+/* src/App.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f6fff5;
+  color: #2d4739;
+}
+
+.container {
+  padding: 40px 20px;
+  max-width: 500px;
+  margin: auto;
+  
+}
+
+.brand {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.coming-soon {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.subtext {
+  color: #4e6e4e;
+  margin-bottom: 20px;
+}
+
+.products p {
+  margin: 6px 0;
+  font-size: 18px;
+}
+
+.dm-text {
+  margin: 20px 0 10px;
+  font-weight: 500;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.buttons a {
+  padding: 10px 18px;
+  border-radius: 25px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.whatsapp {
+  background-color: #25d366;
+}
+
+.whatsapp:hover {
+  background-color: #1ebe59;
+}
+
+.instagram {
+  background-color: #e1306c;
+}
+
+.instagram:hover {
+  background-color: #c12b5f;
+}
+
+.footer {
+  margin-top: 40px;
+  font-size: 14px;
+  color: #888;
+}

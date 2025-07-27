@@ -1,0 +1,24 @@
+[
+    {
+      "id": 1,
+      "title": "Glow Up Smoothie Bowl with Chia Seeds",
+      "image": "../assest/chiasalad.png",
+      "excerpt": "A perfect start to your day with Elyxian Chia Seeds. Learn how to create this antioxidant-rich bowl.",
+      "slug": "chia-smoothie-bowl"
+    },
+    {
+      "id": 2,
+      "title": "Pumpkin Power Salad Recipe",
+      "image": "./../assest/pumpkinsalad.jpg",
+      "excerpt": "High protein. Low carb. Packed with Elyxian Pumpkin Seeds. Here’s how to make it delicious.",
+      "slug": "pumpkin-power-salad"
+    },
+    {
+      "id": 3,
+      "title": "Flaxseed Detox Drink for Clear Skin",
+      "image": "./../assest/chiasalad.png",
+      "excerpt": "Elyxian Flaxseeds make this detox drink a must for your skin routine. See the full recipe.",
+      "slug": "flaxseed-detox-drink"
+    }
+  ]
+  
