@@ -2,7 +2,7 @@
 import React from 'react';
 import './../styles/Home.css'
 import HeroSection from '../compo/HeroSection';
-// import ProductSection from '../compo/ProductSection';
+import ProductSection from '../compo/ProductSection';
 import WhyChoose from '../compo/WhyChoose';
 import Testimonials from '../compo/Testimonials';
 import StickyWhatsApp from '../compo/StickyWhatsApp';
@@ -11,7 +11,7 @@ function Home() {
   return (
     <div className="home">
      <HeroSection/>
-     {/* <ProductSection/> */}
+     <ProductSection/>
      <WhyChoose/>
      <Testimonials/>
      <StickyWhatsApp/>

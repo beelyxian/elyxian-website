@@ -46,20 +46,33 @@
 // export default App;
 
 // src/App.js
+// src/App.js
 import React from 'react';
-// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-// import Navbar from './compo/Navbar';
-// import Home from './pages/home';
-// import Footer from './compo/Footer';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+import Navbar from './compo/Navbar';
+import Footer from './compo/Footer';
+import Home from './pages/home';
+// import About from './pages/About'; // Uncomment if you have more routes
+
 function App() {
   return (
-    <div>
-      <h1>Hello Elyxian</h1>
-    </div>
+    <Router>
+      <Navbar />
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        {/* <Route path="/about" element={<About />} /> */}
+        {/* Add more routes here as needed */}
+      </Routes>
+
+      <Footer />
+    </Router>
   );
 }
 
 export default App;
+
 
 
 
