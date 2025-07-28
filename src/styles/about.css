@@ -1,0 +1,154 @@
+/* About Page General Layout */
+.about-us-page {
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Hero Section */
+  .about-hero {
+    background: linear-gradient(135deg, #e3f9e5, #ffffff);
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .about-hero h1 {
+    font-size: 2.4rem;
+    color: #1d8653;
+    margin-bottom: 10px;
+  }
+  
+  .about-hero p {
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  /* Mission Section */
+  .about-mission {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #fff;
+  }
+  
+  .mission-content {
+    max-width: 600px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .mission-content h2 {
+    color: #1d8653;
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+  }
+  
+  .mission-content p {
+    color: #444;
+    font-size: 1rem;
+  }
+  
+  .mission-image {
+    width: 90%;
+    max-width: 400px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  /* Core Values Section */
+  .core-values {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .core-values h2 {
+    font-size: 2rem;
+    color: #1d8653;
+    margin-bottom: 30px;
+  }
+  
+  .values-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .value-card {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+  }
+  
+  .value-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  }
+  
+  .icon {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 10px;
+    color: #1d8653;
+  }
+  
+  .value-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    color: #333;
+  }
+  
+  .value-card p {
+    font-size: 0.95rem;
+    color: #555;
+  }
+  
+  /* CTA Section */
+  .about-cta {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #ffffff;
+  }
+  
+  .about-cta h2 {
+    font-size: 1.5rem;
+    color: #1d8653;
+    margin-bottom: 20px;
+  }
+  
+  .cta-button {
+    background-color: #25d366;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
+  
+  .cta-button:hover {
+    background-color: #1ebe5d;
+  }
+  
+  /* Responsive */
+  @media (min-width: 768px) {
+    .about-mission {
+      flex-direction: row;
+      justify-content: center;
+      gap: 40px;
+      text-align: left;
+    }
+  
+    .values-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .about-cta h2 {
+      font-size: 1.8rem;
+    }
+  }
+  

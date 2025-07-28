@@ -53,6 +53,9 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './compo/Navbar';
 import Footer from './compo/Footer';
 import Home from './pages/home';
+import Products from './pages/product';
+import AboutUs from './pages/about';
+import ContactUs from './pages/contect';
 // import About from './pages/About'; // Uncomment if you have more routes
 
 function App() {
@@ -62,6 +65,10 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/products" element={<Products />} />
+        <Route path="/about" element={<AboutUs />} />
+        <Route path="/contact" element={<ContactUs />} />
+
         {/* <Route path="/about" element={<About />} /> */}
         {/* Add more routes here as needed */}
       </Routes>

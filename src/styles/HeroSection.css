@@ -1,73 +1,78 @@
 .hero-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 60px 20px;
-    gap: 40px;
-    background: #fafafa;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 60px 20px;
+  gap: 40px;
+  background: #fafafa;
+
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero-text {
+  flex: 1.2;
+  max-width: 600px;
+}
+
+.hero-text h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: #222;
+}
+
+.hero-text p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 24px;
+}
+
+.hero-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #4CAF50;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.hero-btn:hover {
+  background-color: #3e8e41;
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 280px;
+  max-width: 500px;
+}
+
+.hero-image img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
   }
-  
-  .hero-text {
-    flex: 1;
-    max-width: 500px;
-  }
-  
+
   .hero-text h1 {
-    font-size: 32px;
-    font-weight: 700;
-    margin-bottom: 16px;
-    color: #222;
+    font-size: 24px;
   }
-  
-  .hero-text p {
-    font-size: 18px;
-    color: #555;
-    margin-bottom: 24px;
-  }
-  
-  .hero-btn {
-    display: inline-block;
-    padding: 12px 24px;
-    background-color: #4CAF50;
-    color: white;
-    font-weight: bold;
-    border-radius: 8px;
-    text-decoration: none;
-    transition: background-color 0.3s;
-  }
-  
-  .hero-btn:hover {
-    background-color: #3e8e41;
-  }
-  
-  .hero-image {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-  }
-  
+
   .hero-image img {
-    width: 100%;
-    max-width: 500px;
-    height: auto;
-    object-fit: contain;
+    max-width: 300px;
+    margin-top: 20px;
   }
-  
-  /* Responsive */
-  @media (max-width: 768px) {
-    .hero-container {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    .hero-text h1 {
-      font-size: 24px;
-    }
-  
-    .hero-image img {
-      max-width: 320px;
-      margin-top: 20px;
-    }
-  }
-  
+}
