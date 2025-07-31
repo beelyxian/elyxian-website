@@ -56,6 +56,7 @@ import Home from './pages/home';
 import Products from './pages/product';
 import AboutUs from './pages/about';
 import ContactUs from './pages/contect';
+import ProductDetail from './compo/ProductDetail';
 // import About from './pages/About'; // Uncomment if you have more routes
 
 function App() {
@@ -68,6 +69,7 @@ function App() {
         <Route path="/products" element={<Products />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/contact" element={<ContactUs />} />
+        <Route path="/productdetail" element={<ProductDetail />} />
 
         {/* <Route path="/about" element={<About />} /> */}
         {/* Add more routes here as needed */}

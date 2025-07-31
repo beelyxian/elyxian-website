@@ -21,7 +21,7 @@ function Navbar() {
         <div className={`menu-dropdown-wrapper ${isOpen ? 'show' : ''}`}>
         <div className="menu-dropdown">
           <Link to="/" onClick={() => setIsOpen(false)}>Home</Link>
-          <Link to="/products" onClick={() => setIsOpen(false)}>Products</Link>
+          <Link to="/productdetail" onClick={() => setIsOpen(false)}>Products</Link>
           <Link to="/about" onClick={() => setIsOpen(false)}>About</Link>
           <Link to="/contact" onClick={() => setIsOpen(false)}>Contact</Link>
         </div>
