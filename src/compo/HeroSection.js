@@ -10,7 +10,7 @@ const HeroSection = () => {
           Explore Elyxian’s clean, energizing seeds — Chia, Flax, Pumpkin & Sunflower. 
           Boost immunity, energy, and vitality naturally.
         </p>
-        <a href="#products" className="hero-btn">Shop Now</a>
+        <a href="/products" className="hero-btn">Shop Now</a>
       </div>
 
       <div className="hero-image">
