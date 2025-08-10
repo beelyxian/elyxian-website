@@ -49,7 +49,7 @@
 // src/App.js
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
+import BlogDetail from './compo/Blog';
 import Navbar from './compo/Navbar';
 import Footer from './compo/Footer';
 import Home from './pages/home';
@@ -74,6 +74,7 @@ function App() {
         <Route path="/productdetail/:id" element={<ProductDetail />} />
         <Route path="/checkout" element={<CheckoutPage />} />
         <Route path="/ordersucess" element={<OrderSuccess />} />
+<Route path="/blog/:slug" element={<BlogDetail />} />
 
         {/* <Route path="/about" element={<About />} /> */}
         {/* Add more routes here as needed */}
@@ -97,7 +98,7 @@ export default App;
 
 // import React from 'react';
 // import './App.css';  // Import the CSS file from the same folder
-// import logo from './img/public/logo1520.png'
+// import logo from './img/pulogic/logo1520.png'
 // import bgvideo from './img/bgvideo.mp4'
 // import flipkartlogo from './img/public/flipkartlogo.jpeg'
 // import amazonlogo from "./img/public/amazonlogo1.png"
