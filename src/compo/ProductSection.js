@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
-import '../styles/ProductSection.css';
-import seed from '../assest/Chiaseed.png'; // fallback image
-import { useNavigate } from 'react-router-dom';
-import PremiumLoader from './PremiumLoader';
+import React, { useEffect, useState } from "react";
+import axios from "axios";
+import "../styles/ProductSection.css";
+import seed from "../assest/Chiaseed.png";
+import { useNavigate } from "react-router-dom";
+import PremiumLoader from "./PremiumLoader";
 
 function ProductSection() {
   const navigate = useNavigate();
@@ -18,7 +18,7 @@ function ProductSection() {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const res = await axios.get('https://elyxianback.onrender.com/api/products');
+        const res = await axios.get("https://elyxianback.onrender.com/api/products");
         setProducts(res.data);
       } catch (err) {
         console.error("Failed to fetch products:", err);
@@ -51,10 +51,31 @@ function ProductSection() {
               className="product-image"
             />
             <h3 className="product-name">{item.name}</h3>
-            <p className="price">₹{item.price}</p>
+
+            {/* Ratings */}
+            <div className="rating-container">
+              <span className="stars">
+                {"★".repeat(Math.round(item.rating || 4))}
+                {"☆".repeat(5 - Math.round(item.rating || 4))}
+              </span>
+              <span className="review-count">({item.reviewsCount || 120} reviews)</span>
+            </div>
+
+            {/* Price & Discount */}
+            <div className="price-container">
+              {item.discountPrice ? (
+                <>
+                  <span className="discount-price">₹{item.discountPrice}</span>
+                  <span className="original-price">₹{item.price}</span>
+                </>
+              ) : (
+                <span className="discount-price">₹{item.price}</span>
+              )}
+            </div>
+
             <button
               className="buy-btn"
-              onClick={() => handleOrderNow(item.id)}
+              onClick={() => handleOrderNow(item._id)}
               aria-label={`Buy now: ${item.name}`}
             >
               Buy Now

@@ -1,58 +1,105 @@
 .testimonials-section {
-    padding: 60px 20px;
-    background-color: #ffffff;
-    text-align: center;
-  }
-  
+  padding: 70px 20px;
+  background: linear-gradient(135deg, #f7faf8, #ffffff);
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+}
+
+.testimonials-section h2 {
+  font-size: 32px;
+  margin-bottom: 50px;
+  color: #2d4739;
+  font-weight: 700;
+}
+
+.testimonials-grid {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  max-width: 1200px;
+  margin: auto;
+}
+
+.testimonial-card {
+  background: white;
+  border-radius: 14px;
+  padding: 24px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+  position: relative;
+  transition: all 0.3s ease;
+  text-align: left;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+.quote-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
+  color: #e6e6e6;
+}
+
+.stars {
+  display: flex;
+  gap: 3px;
+  margin-bottom: 10px;
+}
+
+.stars svg {
+  width: 18px;
+  height: 18px;
+  fill: #FFD700;
+}
+
+.review-text {
+  font-size: 15px;
+  color: #444;
+  font-style: italic;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.reviewer-info {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  background: #28a745;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  margin-right: 12px;
+  font-size: 18px;
+}
+
+.reviewer {
+  font-size: 14px;
+  color: #555;
+}
+
+.no-reviews {
+  color: #888;
+  font-size: 15px;
+}
+
+@media (max-width: 480px) {
   .testimonials-section h2 {
-    font-size: 28px;
-    margin-bottom: 40px;
-    color: #2d4739;
-    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    margin-bottom: 30px;
   }
-  
-  .testimonials-grid {
-    display: grid;
-    gap: 30px;
-    grid-template-columns: 1fr;
-  }
-  
+
   .testimonial-card {
-    background: #f8f9f8;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-    text-align: left;
+    padding: 18px;
   }
-  
-  .stars {
-    font-size: 18px;
-    color: #FFD700;
-    margin-bottom: 10px;
-  }
-  
-  .review-text {
-    font-size: 16px;
-    color: #444;
-    font-style: italic;
-    margin-bottom: 8px;
-  }
-  
-  .reviewer {
-    font-size: 14px;
-    color: #777;
-  }
-  
-  /* Responsive layout */
-  @media (min-width: 768px) {
-    .testimonials-grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-  
-  @media (min-width: 1024px) {
-    .testimonials-grid {
-      grid-template-columns: repeat(3, 1fr);
-    }
-  }
-  
+}
