@@ -75,7 +75,7 @@ function ProductSection() {
 
             <button
               className="buy-btn"
-              onClick={() => handleOrderNow(item._id)}
+              onClick={() => handleOrderNow(item.id)}
               aria-label={`Buy now: ${item.name}`}
             >
               Buy Now
